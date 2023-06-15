@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="reset.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div class="center">
+            <h1 id="captchaHeading">
+                Complete the captcha:
+            </h1>
+            <div id="captchaBackground">
+                <canvas id="captcha">captcha text</canvas>
+                <input id="textBox" type="text" name="text">
+                <div id="buttons">
+                    <input id="submitButton" type="submit">
+                    <button id="refreshButton" type="submit">Refresh</button>
+                </div>
+                <span id="output"></span>
+            </div>
+        </div>
+    </div>
+    <script src="./captcha.js"></script>
+    <script src="./main.js" type="text/javascript"></script>
+</body>
+
+</html>
